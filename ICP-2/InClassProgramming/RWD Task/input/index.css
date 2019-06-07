@@ -1,0 +1,24 @@
+.container{
+    font-family:'Orbitron';
+
+}
+.topHead{
+    border-bottom: 3px solid black;
+    padding-bottom: 3px;
+    border-bottom-color: #BCBBBB;
+}
+.self{
+    text-align: right;
+}
+.mainPhoto{
+    padding-top:20px;
+}
+.col-md-3 img{
+    padding-left:20px;
+}
+.text-primary{
+    color: #747704;
+}
+.text-secondary{
+    color: #BCBBBB
+}
