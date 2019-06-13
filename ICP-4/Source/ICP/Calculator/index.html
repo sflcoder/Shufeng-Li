@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div ng-app="CalculatorApp" ng-controller="CalculatorController">
+    <div class="container">
+        <div class="calc">
+            <div class ="row">
+                <p class="display">
+                    <input type="text" name="output" id="res" value="{{Outanswer}}" class="display-input">
+                </p>
+            </div>
+            <p class="operators">
+                <button type="button" class="calc-button calc-button-big" ng-click='equationAdd("/")' >÷</button>
+                <button type="button" class="calc-button calc-button-big" ng-click='equationAdd("*")' >x</button>
+                <button type="button" class="calc-button calc-button-big" ng-click='equationAdd("-")' >-</button>
+                <button type="button" class="calc-button calc-button-big" ng-click='equationAdd("+")' >+</button>
+            </p>
+            <p class="calc-num">
+                <button type="button" class="calc-button" ng-click="equationAdd($index)" ng-repeat="n in [0,1,2,3,4,5,6,7,8,9]">{{n}}</button>
+                <button type="button" class="calc-button clear-button" ng-click='clearAll()'>Clear</button>
+            </p>
+            <p class="enter-row">
+                <button type="button" class="calc-button enter-button" ng-click="getAnswer()">=</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

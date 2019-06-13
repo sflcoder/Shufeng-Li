@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo in Angular.js</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500' rel='stylesheet'
+          type='text/css'>
+    <script src="https://use.fontawesome.com/21be5f2318.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+    <script src="todo.js"></script>
+</head>
+<body class="container" ng-app="angularTodo" ng-Controller="angularTodoC">
+<h1>To Do List for 2019</h1>
+<form ng-submit="submit()">
+    Add item:
+    <input type="text" ng-model="text" name="text" />
+    <input type="submit" id="submit" value="Submit" />
+</form>
+<br>
+<div class="items-list">
+    <ul>
+    <li ng-repeat="i in items">{{i.todoText}} {{i.done}}<input type="checkbox" ng-checked="{{i.done}}" ng-model="item.done" ng-change="completeItem($index)">
+        <button type="button" ng-click='deleteItem($index)'>Delete</button></li>
+    </ul>
+</div>
+</body>
+</html>
