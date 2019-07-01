@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/angular.min.js"></script>
+    <script src="MOOC.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body ng-app="app" ng-Controller="MOOCController">
+    <h1>Premier Dog Training</h1>
+    <a href="account.html"><button>Account Details</button></a>
+    <input type="text" ng-model="text" id="text" placeholder="Enter Login Name"/>
+    <button ng-click="submit()">Submit</button>
+
+<!--    <p>Logged in as: </p>-->
+<br><br>
+<div class="row">
+    <div class="col-md-4">
+        <a href="clicker.html"><h2>Clicker Training</h2></a>
+        <a href="clicker.html"><img src="images/clicker.jpg" style="max-width:200%; height: auto;"></a>
+    </div>
+    <div class="col-md-4">
+        <a href="basic.html"><h2>Basic Skills</h2></a>
+        <a href="basic.html"><img src="images/basicSkills2.jpg" style="max-width:200%; height:auto;"></a>
+    </div>
+    <div class="col-md-4">
+        <a href="intermediate.html"><h2>Intermediate Skills</h2></a>
+        <a href="intermediate.html"><img src="images/intermediate.jpg" style="max-width:200%; height: auto;"></a>
+    </div>
+
+</div>
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-4">
+        <a href="puppy.html"><h2>Puppy Training</h2></a>
+        <a href="puppy.html"><img src="images/puppy1.jpg" style="max-width:200%; height: auto;"></a>
+    </div>
+    <div class="col-md-4">
+        <a href="leash.html"><h2>Leash Skills</h2></a>
+        <a href="leash.html"><img src="images/leash.jpg" style="max-width:200%; height:auto;"></a>
+    </div>
+    <div class="col-md-4">
+        <a href="agility.html"><h2>Agility Training</h2></a>
+        <a href="agility.html"><img src="images/agility.jpg" style="max-width:200%; height: auto;"></a>
+    </div>
+</div>
+</body>
+</html>

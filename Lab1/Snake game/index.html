@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app='snakeApp'>
+
+<head>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet'>
+</head>
+
+<body ng-controller="controller">
+
+    <div id="game">
+        <h3>SCORE: {{score}}</h3>
+        <h3>BEST SCORE: {{bestScore}}</h3>
+        <h3><small>DIFFICULTY LEVEL: {{difficulty}}</small></h3>
+
+        <div id="walls">
+            <div class="row" ng-repeat="column in board">
+                <div class="column"
+                    ng-style="{'background-color': setBackgroundColor($parent.$index, $index),
+                            'border-radius': setBorderRadius($parent.$index, $index),
+                            'background-image': setBackgroundImage($parent.$index, $index)}"
+                    ng-repeat="row in column track by $index">
+                </div>
+            </div>
+        </div>
+
+        <div id="start" ng-click="start()">START</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+#game {
+    float:left;
+    font-family: Wallpoet;
+    text-align: right;
+}
+#walls{
+    border: 2px solid black;
+    padding-right:0;
+    margin-right: 0;
+}
+
+.row {
+    height: 26px;
+}
+
+.column {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+#start {
+    width: 460px;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: Wallpoet;
+    font-size: 30px;
+
+}
+
+#start:hover {
+    color: green;
+
+}
