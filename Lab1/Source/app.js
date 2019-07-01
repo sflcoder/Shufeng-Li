@@ -34,6 +34,7 @@ angular.module('myApp', [])
                     }
                 }, function (x) {
                     // Request error
+                    alert("There was some error. Please check your code or try again later.");
                 });
         }
     });
