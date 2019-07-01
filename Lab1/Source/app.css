@@ -1,0 +1,102 @@
+/* app css stylesheet */
+.container {
+    font-family: 'Orbitron';
+    top: 200px;
+}
+
+li {
+    font-size: large;
+    text-align: left;
+    list-style: none;
+}
+
+#name {
+    color: #0f0f0f;
+}
+
+#description {
+    color: #777;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: medium;
+}
+
+#icon {
+    height: 20px;
+    width: 20px;
+}
+
+#picture {
+    width: 95%;
+}
+
+.menu {
+    list-style: upper-latin;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+    color: #1ab188;
+    text-align: center;
+}
+
+.menu > li {
+    display: inline;
+
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+    list-style: none;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+
+.menu input {
+    width: 500px;
+    background: transparent;
+    border: 2px solid #1ab188;
+    border-radius: 4px;
+    color: #5e5e5e;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.menu button {
+    width: 80px;
+    height: 40px;
+    background: #1ab188;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+
+.topHead {
+    border-bottom: 3px solid black;
+    padding-bottom: 3px;
+    border-bottom-color: #BCBBBB;
+}
+
+.self {
+    text-align: right;
+}
+
+.mainPhoto {
+    padding-top: 20px;
+}
+
+.col-md-3 img {
+    padding-left: 20px;
+}
