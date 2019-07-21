@@ -70,5 +70,14 @@ myapp.controller('homeController',function($scope,$http){
             });
     }
 
+    $scope.update = function(book,callback){
+
+        $http.get('http://127.0.0.1:8081/update/'+book._id,{params:book})
+            .success(function(data){
+                console.log("Successfully updated");
+                $scope.getData();
+            });
+    }
+
 });
 

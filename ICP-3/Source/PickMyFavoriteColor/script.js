@@ -12,23 +12,43 @@ function addBox(color) {
     $('#colors').prepend("<div class='item' style='background-color: " + color + ";'><div>");
 }
 
-
 $(document).ready(function () {
 
-    //1.As the page loads add each color in the colors array to the div '#colors'
-
-
+//1.As the page loads add each color in the colors array to the div '#colors'
+    $.each(colors, function (index, color) {
+        $('#colors').append("<div class='item' style='background-color: " + color + ";'><div>");
+    });
 //set the preview color to one of the colors in the colors array randomly
     setPreviewColor(colors[Math.floor(Math.random() * colors.length)]);
-    // an event handler for the key up event i.e. when the user types the color in the input and releases the key on the keyboard
+//an event handler for the key up event i.e. when the user types the color in the input and releases the key on the keyboard
 //The event should set the preview color to the color typed in the input
     $(document).on('keydown keyup keypress', '#color', function () {
         color = $(this).val();
-        setPreviewColor(color);
-    })
+        setPreviewColor( $(this).val());
+    });
 //2.Write an event handler to handle the click the event on the add to favorite button so that the color gets added to the list of favorite colors,
 // the content of the input gets cleared and the focus gets back on the input
-
+    $('#add-to-favorite').on('click', function () {
+        addBox(color);
+        var removed = colors.pop();
+        $('#color').val('');
+        $('#color').focus();
+    });
 //3.Write events handlers such that whenever any item in the favorite colors is clicked or hovered, the color gets displayed in the preview div
+    $('#colors').hover(function () {
+        color = $(this).val();
+        //setPreviewColor(color);
+        $('.preview').setPreviewColor(color);
+        //$('.preview').css('background-color', color);
+        //$('.preview').css('background-color', color);
+    });
+    $('#colors').on('click', function () {
+        color = $(this).val();
+        //setPreviewColor(color);
+        //$('.preview').css('background-color', e6bd01);
+        $('#preview').setPreviewColor( $(this).val());
+        $('.preview').setPreviewColor(color);
+        $('.preview').css('background-color', color);
+    });
 
 });

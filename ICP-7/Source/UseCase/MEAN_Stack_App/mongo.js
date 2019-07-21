@@ -10,7 +10,7 @@ var app = express();
 
 //var url='mongodb://foo:foo@ds147668.mlab.com:47668/web_demo';//1.Modify this url with the credentials of your db name and password.
 //var url='mongodb+srv://student:student@umkclab-rh4yb.mongodb.net/test?retryWrites=true&w=majority';
-var url='mongodb://japoland:CS490!!!!@cs490-shard-00-00-btbrn.mongodb.net:27017,cs490-shard-00-01-btbrn.mongodb.net:27017,cs490-shard-00-02-btbrn.mongodb.net:27017/test?ssl=true&replicaSet=CS490-shard-0&authSource=admin&retryWrites=true&w=majority';
+var url='mongodb://team:team@cluster0-shard-00-00-zd7rm.mongodb.net:27017,cluster0-shard-00-01-zd7rm.mongodb.net:27017,cluster0-shard-00-02-zd7rm.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority';
 var ObjectID = require('mongodb').ObjectID;
 
 app.use(cors());
