@@ -121,6 +121,7 @@
             android:textColor="@android:color/white" />
 
         <ImageView
+            android:visibility="invisible"
             android:id="@+id/userImage"
             android:layout_width="150dp"
             android:layout_height="133dp"
@@ -131,6 +132,7 @@
             />
 
         <Button
+            android:visibility="invisible"
             android:id="@+id/btn_upload"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
