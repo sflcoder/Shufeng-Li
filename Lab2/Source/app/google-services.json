@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "220467130236",
+    "firebase_url": "https://icp12-32284.firebaseio.com",
+    "project_id": "icp12-32284",
+    "storage_bucket": "icp12-32284.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220467130236:android:7f9d33fb3be11771",
+        "android_client_info": {
+          "package_name": "com.example.micp5firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220467130236-5rpjqjec5vjtc9kk5s7qi0rgdhuot0le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLiUssL_t7tvyow27DKnNzsIdaIzTvNIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220467130236-5rpjqjec5vjtc9kk5s7qi0rgdhuot0le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220467130236:android:0e7008247a2b171f",
+        "android_client_info": {
+          "package_name": "edu.umkc.rashmi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220467130236-atr24gp5avqig3tu254eqc5gvhdfb1s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.umkc.rashmi",
+            "certificate_hash": "a6fb1b42f48df1dd362fc0f316f6b1575db7b281"
+          }
+        },
+        {
+          "client_id": "220467130236-5rpjqjec5vjtc9kk5s7qi0rgdhuot0le.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLiUssL_t7tvyow27DKnNzsIdaIzTvNIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220467130236-5rpjqjec5vjtc9kk5s7qi0rgdhuot0le.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
